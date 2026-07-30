@@ -1,5 +1,5 @@
 {
-  "connectURL": "jdbc:postgresql://timescaledb:5432/ignition_test",
+  "connectURL": "jdbc:postgresql://timescaledb:5432/ignition_production",
   "connectionProps": "",
   "connectionResetParams": "",
   "defaultTransactionLevel": "DEFAULT",
@@ -13,7 +13,7 @@
   "password": {
     "data": {
       "providerName": "LabSecrets",
-      "secretName": "POSTGRES_PASSWORD"
+      "secretName": "REPORTING_PASSWORD"
     },
     "type": "Referenced"
   },
@@ -27,7 +27,7 @@
   "testOnReturn": false,
   "testWhileIdle": false,
   "translator": "POSTGRES",
-  "username": "ignition",
+  "username": "reporting",
   "validationQuery": "SELECT 1",
   "validationSleepTime": 10000
 }
